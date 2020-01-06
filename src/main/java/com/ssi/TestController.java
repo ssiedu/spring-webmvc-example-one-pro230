@@ -7,6 +7,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TestController {
 	//write the different handler-methods
 	
+	@RequestMapping("/info")
+	public String showInformationPage(){
+		return "information.jsp";
+	}
+	
+	@RequestMapping("/data")
+	public String showUserInfoPage(){
+		return "userinfo.jsp";
+	}
+	
+	
+	
 	@RequestMapping("/hello")
 	public void helloHandler(){
 		System.out.println("WELCOME TO FIRST SPRING WEB APPLICATION");
